@@ -142,7 +142,9 @@
                                     <div class="project_hover_content">
                                         <a href="#"><h4>Jahanara Vila</h4></a>
                                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium</p>
-                                        <a class="view_btn" href="#">View Project</a>
+                                        <a class="view_btn" href="#" onclick="" id='myBtn'>View Project</a>
+                                        <!-- Modal -->
+                                             
                                     </div>
                                 </div>
                             </div>
@@ -264,6 +266,57 @@
            </div>
         </section>
         <!--================End Our Project2 Area =================-->
+         <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Header1</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Some text in the modal.</p>
+                </div>
+                   <a href="#" id='myBtn1'>
+                      <span class="glyphicon glyphicon-menu-left"></span>
+                    </a>
+                   <a href="#">
+                          <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        
+         <div class="modal fade" id="myModal1" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Header 2</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Some text in the modal.</p>
+                </div>
+                   <a href="#">
+                      <span class="glyphicon glyphicon-menu-left"></span>
+                    </a>
+                   <a href="#">
+                          <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
         
         <!--================Get Quote Area =================-->
         <section class="get_quote_area yellow_get_quote">
@@ -375,14 +428,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </footer>
         <!--================End Footer Area =================-->
         
-        
-        
-        
-        
-        
-        
-        
-        
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery-2.2.4.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -408,5 +453,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="js/gmaps.min.js"></script>
         
         <script src="js/theme.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("#myBtn").click(function(){
+                $("#myModal").modal();
+            });
+            $("#myBtn1").click(function(){
+                $("#myModal1").modal();
+            });
+            
+            
+        });
+        </script>
     </body>
 </html>

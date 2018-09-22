@@ -353,7 +353,7 @@ iframe {
 }
 
 .main_header_area.navbar_fixed .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li.active a {
-  color: #ffcd00;
+  color: #d6251c;
 }
 
 .header_top_area {
@@ -1484,8 +1484,8 @@ iframe {
 }
 
 .our_service_area .left_service {
-  width: calc(50% + 80px);
-  float: left;
+  width: calc(70% /*+ 80px*/);
+  float: right;
   overflow: hidden;
   background: url(../img/service-bg.jpg) no-repeat scroll center center;
   background-size: cover;
@@ -1583,7 +1583,7 @@ iframe {
 
 .our_service_area .right_service {
   width: calc(50% - 80px);
-  float: right;
+  float: left;
   overflow: hidden;
 }
 

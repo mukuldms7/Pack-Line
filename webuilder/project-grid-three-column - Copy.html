@@ -142,7 +142,7 @@
                                     <div class="project_hover_content">
                                         <a href="#"><h4>Jahanara Vila</h4></a>
                                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium</p>
-                                        <a class="view_btn" href="#" onclick="" id='myBtn'>View Project</a>
+                                        <a class="view_btn" href="#" id='myBtn1'>View Project</a>
                                         <!-- Modal -->
                                              
                                     </div>
@@ -158,7 +158,7 @@
                                     <div class="project_hover_content">
                                         <a href="#"><h4>Jahanara Vila</h4></a>
                                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium</p>
-                                        <a class="view_btn" href="#">View Project</a>
+                                        <a class="view_btn" href="#" id='myBtn2'>View Project</a>
                                     </div>
                                 </div>
                             </div>
@@ -266,58 +266,48 @@
            </div>
         </section>
         <!--================End Our Project2 Area =================-->
-         <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Modal Header1</h4>
-                </div>
-                <div class="modal-body">
-                  <p>Some text in the modal.</p>
-                </div>
-                   <a href="#" id='myBtn1'>
-                      <span class="glyphicon glyphicon-menu-left"></span>
-                    </a>
-                   <a href="#">
-                          <span class="glyphicon glyphicon-menu-right"></span>
-                        </a>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        
          <div class="modal fade" id="myModal1" role="dialog">
             <div class="modal-dialog">
-
               <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Modal Header 2</h4>
-                </div>
-                <div class="modal-body">
-                  <p>Some text in the modal.</p>
-                </div>
-                   <a href="#">
-                      <span class="glyphicon glyphicon-menu-left"></span>
-                    </a>
-                   <a href="#">
-                          <span class="glyphicon glyphicon-menu-right"></span>
-                        </a>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-
+                         <button type="button" class="btn btn-default btn-sm">
+                          <span class="glyphicon glyphicon-menu-left"></span>  
+                        </button>
+                        <button type="button" class="btn btn-default btn-sm" id="closeit1">
+                          <span class="glyphicon glyphicon-remove"></span>  
+                        </button>
+                        <img src="img/project/project-grid-three/project-g-three-1.jpg" alt="">
+                               
+                        <button type="button" class="btn btn-default btn-sm" id="right1">
+                          <span class="glyphicon glyphicon-menu-right"></span>  
+                        </button>
+                <div class="container row"> 
+                <div class="col-md-6"> this is to test the HTML code</div>
+                <div class="col-md-6"> AGain this is a test</div>
+                    </div>
             </div>
           </div>
         
+         <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+                         <button type="button" class="btn btn-default btn-sm">
+                          <span class="glyphicon glyphicon-menu-left" id="left1"></span>  
+                        </button>
+                        <button type="button" class="btn btn-default btn-sm" id="closeit2">
+                          <span class="glyphicon glyphicon-remove"></span>  
+                        </button>
+                        <img src="img/project/project-grid-three/project-g-three-2.jpg" alt="">
+                               
+                        <button type="button" class="btn btn-default btn-sm" id="">
+                          <span class="glyphicon glyphicon-menu-right"></span>  
+                        </button>
+                
+                  <div class="container row"> 
+                <div class="col-md-6"> this is to test the HTML code for 2nd code </div>
+                <div class="col-md-6"> Again this is a test for 2nd code</div>
+                    </div>
+            </div>
+          </div>
         <!--================Get Quote Area =================-->
         <section class="get_quote_area yellow_get_quote">
             <div class="container">
@@ -455,13 +445,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="js/theme.js"></script>
         <script>
         $(document).ready(function(){
-            $("#myBtn").click(function(){
-                $("#myModal").modal();
-            });
             $("#myBtn1").click(function(){
                 $("#myModal1").modal();
             });
-            
+            $("#myBtn2").click(function(){
+                $("#myModal2").modal();
+            });
+             $("#closeit").click(function(){
+                $("#myModal1").modal("hide");
+            });
+            $("#right1").click(function(){
+                $("#myModal1").modal("hide");
+                $("#myModal2").modal();
+            });
+            $("#left1").click(function(){
+                $("#myModal2").modal("hide");
+                $("#myModal1").modal();
+            });
             
         });
         </script>

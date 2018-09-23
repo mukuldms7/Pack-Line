@@ -26,6 +26,9 @@
         <!-- Extra plugin css -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -638,9 +641,9 @@
        
           <center>   <h1 > Our Clients</h1></center>
             <br> <br>
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div id="" class="" >
                 <!-- Indicators -->
-                <ol class="carousel-indicators">
+               <!-- <ol class="carousel-indicators">-->
                   <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                   <li data-target="#myCarousel" data-slide-to="1"></li>
                   <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -654,54 +657,37 @@
                     <li data-target="#myCarousel" data-slide-to="10"></li>
                   <li data-target="#myCarousel" data-slide-to="11"></li>
                     <li data-target="#myCarousel" data-slide-to="12"></li>-->
-                </ol>
-
+             <!--   </ol>
+-->
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
+                <div class="siema">
+                  
+                   <div> <center> <img src="img/clients/client-1.png" alt="Chania" >                   </center> </div>
 
-                  <div class="item active">
-                    <center><img src="img/clients/client-1.png" alt="Chania" > </center>
-                  </div>
+                    <div> <center> <img src="img/clients/client-2.png" alt="Chania" >                    </center> </div>
 
-                  <div class="item">
-                    <center><img src="img/clients/client-2.png" alt="Chania" > </center>
-                  </div>
+                    <div> <center> <img src="img/clients/client-3.png" alt="Flower" >                    </center> </div>
 
-                  <div class="item">
-                   <center> <img src="img/clients/client-3.png" alt="Flower" > </center>
-                  </div>
+                    <div> <center> <img src="img/clients/client-4.png" alt="Flower" >                   </center> </div>
+                    <div> <center> <img src="img/clients/client-5.png" alt="Flower" >                  </center> </div>
 
-                  <div class="item">
-                    <center><img src="img/clients/client-4.png" alt="Flower" > </center>
-                  </div>
-                    
-                     <div class="item">
-                    <center><img src="img/clients/client-5.png" alt="Flower" > </center>
-                  </div>
-                     <div class="item">
-                   <center> <img src="img/clients/client-6.png" alt="Flower" > </center>
-                  </div>
-                     <div class="item">
-                    <center><img src="img/clients/client-7.png" alt="Flower" > </center>
-                  </div>
-                     <div class="item">
-                    <center><img src="img/clients/client-8.png" alt="Flower" > </center>
-                  </div>
-                     <div class="item">
-                   <center> <img src="img/clients/client-9.png" alt="Flower" > </center>
-                  </div>
-                     <div class="item">
-                   <center> <img src="img/clients/client-10.png" alt="Flower" > </center>
-                  </div>
-                     <div class="item">
-                    <center><img src="img/clients/client-11.png" alt="Flower" > </center>
-                  </div>
-                     <div class="item">
-                    <center><img src="img/clients/client-12.png" alt="Flower" > </center>
-                    </div>
+                    <div><center>  <img src="img/clients/client-6.png" alt="Flower" >  </center> </div>
+                 
+                    <div><center>  <img src="img/clients/client-7.png" alt="Flower" >  </center> </div>
+                  
+                    <div><center>  <img src="img/clients/client-8.png" alt="Flower" >  </center> </div>
+                
+                    <div><center>  <img src="img/clients/client-9.png" alt="Flower" >  </center> </div>
+                
+                    <div><center>  <img src="img/clients/client-10.jpg" alt="Flower" >  </center> </div>
+                 
+                    <div><center>  <img src="img/clients/client-11.png" alt="Flower" >  </center> </div>
+                
+                    <div><center>  <img src="img/clients/client-12.png" alt="Flower" >  </center> </div>
+                   
                     
                 </div>
-
+                
                 <!-- Left and right controls -->
   <!--              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -1176,8 +1162,36 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>&nbsp;
         
         <script src="js/theme.js"></script>
         
-        
+       <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript">
+    $(document).ready(function(){
+      $('.siema').slick({
+        slidesToShow: 6,
+      slidesToScroll: 2,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      });
+    });
+  </script>
+     <!--   <script src="js/siema.min.js"></script>
         <script>
+        new Siema({
+          selector: '.siema',
+          duration: 500,
+          perPage: 3,
+          startIndex: 0,
+          threshold: 20,
+          loop: true,
+          rtl: false,
+          onInit: () => {},
+          onChange: () => {},
+        });
+            document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+document.querySelector('.next').addEventListener('click', () => mySiema.next());
+        </script>-->
+        <!--<script>
             $(document).ready(function(){
                 // Activate Carousel
                 $("#myCarousel").carousel({interval: 500});
@@ -1204,6 +1218,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>&nbsp;
                     $("#myCarousel").carousel("next");
                 });
             });
-</script>
+</script>-->
     </body>
 </html>

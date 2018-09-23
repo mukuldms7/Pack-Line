@@ -1276,6 +1276,7 @@ iframe {
 ============================================================================================ */
 .who_we_are_area {
   padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .who_we_are_area .main_w_title {
@@ -2243,7 +2244,7 @@ iframe {
 /* Counter area css
 ============================================================================================ */
 .counter_area {
-  background: #2379ba;
+  background: #444444;
   padding: 60px 0px;
 }
 
@@ -2432,7 +2433,7 @@ iframe {
   width: auto;
   max-width: 100%;
   display: inline-block;
-  line-height: 90px;
+  line-height: 40px;
 }
 
 .clients_slider .item:hover {
@@ -3265,7 +3266,7 @@ iframe {
 
 .our_project_details .project_item .project_hover .project_hover_inner {
   height: 100%;
-  border: 2px solid rgba(214, 37, 28, 0.8);
+  /*border: 2px solid rgba(214, 37, 28, 0.8);*/
   position: relative;
 }
 
@@ -3368,7 +3369,7 @@ iframe {
 
 .project_item .project_hover .project_hover_inner {
   height: 100%;
-  border: 2px solid rgba(255, 205, 0, 0.8);
+  /*border: 2px solid rgba(255, 205, 0, 0.8);*/
   position: relative;
 }
 

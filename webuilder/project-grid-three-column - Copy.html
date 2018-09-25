@@ -26,7 +26,7 @@
         <!-- Extra plugin css -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
-
+        <link href="css/lightbox.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -279,7 +279,7 @@
                             <div class="project_hover">
                                 <div class="project_hover_inner">
                                     <div class="project_hover_content">
-                                        <a href="#"><h4>Cable Trench</h4></a>
+                                        <a href="img/project/project-grid-three/project-g-three-9.jpg" data-lightbox="roadtrip"><h4>Cable Trench</h4></a>
                                         <!--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium</p>
                                         <a class="view_btn" href="#">View Project</a>-->
                                     </div>
@@ -293,7 +293,7 @@
                             <div class="project_hover">
                                 <div class="project_hover_inner">
                                     <div class="project_hover_content">
-                                        <a href="#"><h4>Comveyor Control System</h4></a>
+                                        <a href="img/project/project-grid-three/project-g-three-10.jpg" data-lightbox="roadtrip"><h4>Conveyor Control System</h4></a>
                                         <!--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium</p>
                                         <a class="view_btn" href="#">View Project</a>-->
                                     </div>
@@ -307,7 +307,7 @@
                             <div class="project_hover">
                                 <div class="project_hover_inner">
                                     <div class="project_hover_content">
-                                        <a href="#"><h4>Modular Straigh Convoyers</h4></a>
+                                        <a href="img/project/project-grid-three/project-g-three-11.jpg" data-lightbox="roadtrip"><h4>Modular Straigh Convoyers</h4></a>
                                         <!--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium</p>
                                         <a class="view_btn" href="#">View Project</a>-->
                                     </div>
@@ -321,7 +321,7 @@
                             <div class="project_hover">
                                 <div class="project_hover_inner">
                                     <div class="project_hover_content">
-                                        <a href="#"><h4>Drive Unit</h4></a>
+                                        <a href="img/project/project-grid-three/project-g-three-12.jpg" data-lightbox="roadtrip"><h4>Drive Unit</h4></a>
                                         <!--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium</p>
                                         <a class="view_btn" href="#">View Project</a>-->
                                     </div>
@@ -335,7 +335,7 @@
                             <div class="project_hover">
                                 <div class="project_hover_inner">
                                     <div class="project_hover_content">
-                                        <a href="#"><h4>Drive & End Unit</h4></a>
+                                        <a href="img/project/project-grid-three/project-g-three-13.jpg" data-lightbox="roadtrip"><h4>Drive & End Unit</h4></a>
                                         <!--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium</p>
                                         <a class="view_btn" href="#">View Project</a>-->
                                     </div>
@@ -349,7 +349,7 @@
                             <div class="project_hover">
                                 <div class="project_hover_inner">
                                     <div class="project_hover_content">
-                                        <a href="#"><h4>90 Degree Curve</h4></a>
+                                        <a href="img/project/project-grid-three/project-g-three-14.jpg" data-lightbox="roadtrip"><h4>90<sup>o</sup> Curve</h4></a>
                                         <!--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium</p>
                                         <a class="view_btn" href="#">View Project</a>-->
                                     </div>
@@ -363,7 +363,7 @@
                             <div class="project_hover">
                                 <div class="project_hover_inner">
                                     <div class="project_hover_content">
-                                        <a href="#"><h4>180 Degree Curve</h4></a>
+                                        <a href="img/project/project-grid-three/project-g-three-15.jpg" data-lightbox="roadtrip"><h4>180<sup>o</sup> Curve</h4></a>
                                         <!--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium</p>
                                         <a class="view_btn" href="#">View Project</a>-->
                                     </div>
@@ -1098,6 +1098,7 @@ Copyright &copy; &nbsp;<script>document.write(new Date().getFullYear());</script
         <script src="js/gmaps.min.js"></script>
         
         <script src="js/theme.js"></script>
+        <script src="js/lightbox.js"></script>
         <script>
         $(document).ready(function(){
            /* to open nth modal*/
@@ -1222,6 +1223,14 @@ Copyright &copy; &nbsp;<script>document.write(new Date().getFullYear());</script
             });
             
         });
+        </script>
+        <script>
+        <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
         </script>
         <style>
         .modal-dialog {

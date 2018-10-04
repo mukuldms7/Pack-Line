@@ -123,6 +123,8 @@
                     <div class="col-md-4 col-sm-6 building isolation interior">
                         <div class="project_item">
                             <img src="img/project/project-grid-three/project-g-three-1.jpg" alt="">
+                            <center> <h4>Mechanical Roboticarm Packer <br><br></h4>
+                            MRP-100</center>
                             <div class="project_hover">
                                 <div class="project_hover_inner">
                                     <div class="project_hover_content">
@@ -137,6 +139,8 @@
                     <div class="col-md-4 col-sm-6 building isolation tiling design">
                         <div class="project_item">
                             <img src="img/project/project-grid-three/project-g-three-2.jpg" alt="">
+                           <center>  <h4>Pick and Place Packer <br><br></h4>
+                            PPP-140 </center>
                             <div class="project_hover">
                                 <div class="project_hover_inner">
                                     <div class="project_hover_content">
@@ -380,7 +384,7 @@
                 <div class="modal-content"> 
                     <center> 
                          <button type="button" class="btn btn-default btn-sm">
-                          <span class="glyphicon glyphicon-menu-left" id="left8"></span>  
+                          <span class="glyphicon glyphicon-menu-left" id="left9"></span>  
                         </button>
                        
                         <a href=# ><img src="img/project/project-grid-three/project-g-three-1.jpg" alt=""></a>
@@ -898,7 +902,7 @@
                        
                         <img src="img/project/project-grid-three/project-g-three-8.jpg" alt="">
                                
-                        <button type="button" class="btn btn-default btn-sm" id="right1">
+                        <button type="button" class="btn btn-default btn-sm" id="right9">
                           <span class="glyphicon glyphicon-menu-right"></span>  
                         </button>
                          <button type="button" class="btn btn-default btn-sm" id="closeit8">
@@ -963,7 +967,7 @@
                 <div class="modal-content"> 
                     <center> 
                          <button type="button" class="btn btn-default btn-sm">
-                          <span class="glyphicon glyphicon-menu-left" id="left7"></span>  
+                          <span class="glyphicon glyphicon-menu-left" id="left8"></span>  
                         </button>
                        
                         <img src="img/project/project-grid-three/project-g-three-2.jpg" alt="">
@@ -971,7 +975,7 @@
                         <button type="button" class="btn btn-default btn-sm" id="right1">
                           <span class="glyphicon glyphicon-menu-right"></span>  
                         </button>
-                         <button type="button" class="btn btn-default btn-sm" id="closeit8">
+                         <button type="button" class="btn btn-default btn-sm" id="closeit9">
                           <span class="glyphicon glyphicon-remove"></span>  
                         </button>
                         </center> 
@@ -1195,6 +1199,9 @@ Copyright &copy; &nbsp;<script>document.write(new Date().getFullYear());</script
             $("#myBtn8").click(function(){
                 $("#myModal8").modal();
             });
+             $("#myBtn9").click(function(){
+                $("#myModal9").modal();
+            });
             
               /* to close nth modal*/
              $("#closeit1").click(function(){
@@ -1221,14 +1228,21 @@ Copyright &copy; &nbsp;<script>document.write(new Date().getFullYear());</script
              $("#closeit8").click(function(){
                 $("#myModal8").modal("hide");
             });
+            $("#closeit9").click(function(){
+                $("#myModal9").modal("hide");
+            });
             
               /* to open right modal*/
             $("#right8").click(function(){
                 $("#myModal7").modal("hide");
                 $("#myModal8").modal();
             });
-            $("#right1").click(function(){
+            $("#right9").click(function(){
                 $("#myModal8").modal("hide");
+                $("#myModal9").modal();
+            });
+            $("#right1").click(function(){
+                $("#myModal9").modal("hide");
                 $("#myModal1").modal();
             });
             $("#right2").click(function(){
@@ -1287,8 +1301,12 @@ Copyright &copy; &nbsp;<script>document.write(new Date().getFullYear());</script
                 $("#myModal7").modal();
             });
             $("#left8").click(function(){
-                $("#myModal1").modal("hide");
+                $("#myModal9").modal("hide");
                 $("#myModal8").modal();
+            });
+             $("#left9").click(function(){
+                $("#myModal1").modal("hide");
+                $("#myModal9").modal();
             });
             
         });
@@ -1320,7 +1338,7 @@ Copyright &copy; &nbsp;<script>document.write(new Date().getFullYear());</script
             font-size: 80px;
                    color:red;
          }
-            #closeit1, #closeit2, #closeit3,#closeit4,#closeit5,#closeit6,#closeit7,#closeit8
+            #closeit1, #closeit2, #closeit3,#closeit4,#closeit5,#closeit6,#closeit7,#closeit8,#closeit9
             {
                 position: relative;
                 top: -200px;

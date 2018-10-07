@@ -193,18 +193,19 @@
             
             
             <div class="slicky">
-                <center> <div><img class="img-responsive" src='img/home-slider/slider-1.JPG'></div> </center>
-               <center>  <div><img class="img-responsive" src="img/home-slider/project-g-three-1.jpg"></div> </center>
-               <center>  <div><img class="img-responsive" src="img/home-slider/project-g-three-2.jpg"></div> </center>
-               <center>  <div><img class="img-responsive" src="img/home-slider/project-g-three-3.jpg"></div> </center>
-                <center>  <div><img class="img-responsive" src="img/home-slider/project-g-three-4.jpg"></div> </center>
+                <center>  <div><img class="img-responsive" src='img/home-slider/slider-1.JPG'>
+                     <h2 id="txt">text 1</h2> </div> </center>
+                <center>  <div><img class="img-responsive" src="img/home-slider/project-g-three-1.jpg">
+                     <h2 id="txt">text 1</h2> </div> </center>
+                <center>  <div><img class="img-responsive" src="img/home-slider/project-g-three-2.jpg">
+                     <h2 id="txt">text 1</h2> </div> </center>
+                <center>  <div><img class="img-responsive" src="img/home-slider/project-g-three-3.jpg">
+                     <h2 id="txt">text 1</h2> </div> </center>
+                <center>  <div><img class="img-responsive" src="img/home-slider/project-g-three-4.jpg">
+                     <h2 id="txt">text 1</h2> </div> </center>
             </div>
             
-            
         </section>
-        
-        
-        
         
         <style>
         
@@ -243,6 +244,22 @@
             .main_slider_area .rev_slider .tp-revslider-mainul li .slotholder:before{
                 background: rgba(0, 0, 0, 0);
             }
+            .slicky{
+              position: relative;
+            }
+            #txt {
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             -webkit-transform: translate(-50%, -50%);
+             transform: translate(-50%, -50%);
+             color: white;
+             font-size: 46px;
+             -webkit-transition: all 300ms ease;
+             transition: all 300ms ease;
+             text-transform: uppercase;
+                z-index: 20;
+            }
         </style>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery-2.2.4.js"></script>
@@ -274,7 +291,6 @@
           <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
           <script type="text/javascript" src="slick/slick.min.js"></script>
             
-        
         <script type="text/javascript">
             $(document).ready(function(){
               $('.siema').slick({
@@ -301,9 +317,6 @@
                 
                 $('.slicky1').slick();
             });
-        </script>
-            
-            
-            
+        </script>     
     </body>
 </html>
